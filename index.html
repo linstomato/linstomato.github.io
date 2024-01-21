@@ -1,1 +1,72 @@
-hello
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>番茄之家</title>
+    <link rel="stylesheet" href="style.css"> <!-- 如果有CSS樣式表，請引入它 -->
+</head>
+<body>
+    <header>
+        <h1>歡迎來到番茄之家</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">首頁</a></li>
+                <li><a href="#products">產品</a></li>
+                <li><a href="#about">關於我們</a></li>
+                <li><a href="#contact">聯絡我們</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>新鮮的番茄，來自我們的農場</h2>
+        <p>品味新鮮、健康的番茄，我們提供各種品種和包裝。</p>
+        <p>立即訂購，品嚐最美味的番茄！</p>
+    </section>
+
+    <section id="products">
+        <h2>我們的產品</h2>
+        <div class="product">
+            <img src="tomato1.jpg" alt="番茄1">
+            <h3>番茄品種1</h3>
+            <p>描述番茄品種1的特點和價格。</p>
+            <a href="product1.html">查看詳細</a>
+        </div>
+        <div class="product">
+            <img src="tomato2.jpg" alt="番茄2">
+            <h3>番茄品種2</h3>
+            <p>描述番茄品種2的特點和價格。</p>
+            <a href="product2.html">查看詳細</a>
+        </div>
+        <!-- 添加更多產品 -->
+    </section>
+
+    <section id="about">
+        <h2>關於我們</h2>
+        <p>我們的農場歷史和承諾提供高質量的番茄。</p>
+        <p>我們的農民和團隊致力於種植最好的番茄。</p>
+    </section>
+
+    <section id="contact">
+        <h2>聯絡我們</h2>
+        <p>有任何問題或需求？請與我們聯絡：</p>
+        <form action="submit_form.php" method="post">
+            <label for="name">姓名：</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="email">電子郵件：</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="message">消息：</label>
+            <textarea id="message" name="message" required></textarea>
+            <br>
+            <input type="submit" value="發送">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 番茄之家. All rights reserved.</p>
+    </footer>
+</body>
+</html>
